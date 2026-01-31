@@ -5,7 +5,7 @@ INSERT INTO profile (name, title, summary, level, avatar_url, avatar_frame_url, 
 VALUES (
     'Edy Kelvianto',
     'Fullstack Developer',
-    'Dynamic Fullstack Developer with expertise in building scalable web applications using ASP.NET and React.js. Proven track record in optimizing database performance through complex SQL/HANA query development.'
+    'Dynamic Fullstack Developer with expertise in building scalable web applications using ASP.NET and React.js. Proven track record in optimizing database performance through complex SQL/HANA query development.',
     23,
     'images/profile.jpg',
     'images/profile-frame.png',
@@ -37,8 +37,8 @@ INSERT INTO skill_categories (title, display_order) VALUES ('Frontend', 2);
 INSERT INTO skills (category_id, name, display_order) VALUES
     (2, 'React.js', 1),
     (2, 'ASP.NET MVC', 2),
-    (2, 'Razor Pages', 3)
-    (2, 'Thymeleaf', 4)
+    (2, 'Razor Pages', 3),
+    (2, 'Thymeleaf', 4);
 
 -- Database
 INSERT INTO skill_categories (title, display_order) VALUES ('Database', 3);
@@ -49,7 +49,6 @@ INSERT INTO skills (category_id, name, display_order) VALUES
     (3, 'Performance Tuning', 4),
     (3, 'Indexing', 5);
 
--- Cloud & DevOps
 INSERT INTO skill_categories (title, display_order) VALUES ('Cloud', 4);
 INSERT INTO skills (category_id, name, display_order) VALUES
     (4, 'Google Cloud', 1),
@@ -64,7 +63,7 @@ INSERT INTO skills (category_id, name, display_order) VALUES
     (5, '2FA', 2),
     (5, 'Spring Security', 3),
     (5, 'AES', 4),
-    (6, 'Bcrypt', 5);
+    (5, 'Bcrypt', 5);
 
     
 
@@ -80,14 +79,8 @@ INSERT INTO experience_responsibilities (experience_id, description, display_ord
     (1, 'Revamped the SDLC by implementing a Feature Branching strategy and CI/CD pipelines, reducing code conflicts by 80% and enhancing deployment reliability across SEA and China', 4),
     (1, 'Refactored Reporting T-SQL queries, achieving a 99% execution speed improvement (hours to seconds) by analyzing execution plan and applying proper indexing', 5),
     (1, 'Developed automated data integration solutions synchronizing SharePoint and Caspio platforms data to SQL Server using .NET 8 and RESTful APIs, enabling audit trail capabilities', 6);
--- INSERT INTO experience_responsibilities (experience_id, description, display_order) VALUES
---     (1, 'Develop and optimize MES and Logistics systems utilizing a hybrid stack of .NET 8/Core, legacy .NET Framework, and Vue.js, building scalable and performant systems', 1),
---     (1, 'Developed a centralized Single Sign-On (SSO) framework using OpenIddict (OAuth2 and OpenID), integrated with 2FA and TOTP for enhanced multi-factor authentication, reducing support overhead for login related issues by 30%', 2),
---     (1, 'Achieved a 99.9% uptime for critical manufacturing processes by migrating legacy workflows to Google Cloud (GCP), leveraging Cloud Run Functions and Application Integration', 3),
---     (1, 'Revamped the SDLC by implementing a Feature Branching strategy and CI/CD pipelines, reducing code conflicts by 80% and enhancing deployment reliability across SEA and China', 4),
---     (1, 'Refactored Reporting T-SQL queries, achieving a 99% execution speed improvement (hours to seconds) by analyzing execution plan and applying proper indexing', 5),
---     (1, 'Developed automated data integration solutions synchronizing SharePoint and Caspio platforms data to SQL Server using .NET 8 and RESTful APIs, enabling audit trail capabilities', 6);
 
+    
 -- ANACLE
 INSERT INTO experiences (position, company, location, duration, display_order)
 VALUES ('Full Stack Developer', 'ANACLE', 'Singapore', 'Dec 2021 - Oct 2022', 2);
@@ -166,4 +159,4 @@ INSERT INTO contact_links (icon, text, url, display_order) VALUES
 
 -- 8. Insert Location
 INSERT INTO location_info (location)
-VALUES ('Singapore');
+VALUES ('Indonesia');
