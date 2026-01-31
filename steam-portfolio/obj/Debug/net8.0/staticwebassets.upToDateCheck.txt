@@ -1,0 +1,10 @@
+wwwroot\app.css
+wwwroot\data\contact.json
+wwwroot\data\experience.json
+wwwroot\data\profile.json
+wwwroot\data\projects.json
+wwwroot\data\skills.json
+wwwroot\docs\resume.pdf
+wwwroot\images\profile-frame.png
+wwwroot\images\profile.jpg
+wwwroot\steam-theme.css
