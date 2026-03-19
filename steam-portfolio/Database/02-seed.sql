@@ -68,93 +68,68 @@ INSERT INTO skills (category_id, name, display_order) VALUES
     
 
 -- 4. Insert Work Experience
--- SHIMANO
 INSERT INTO experiences (position, company, location, duration, display_order)
 VALUES ('Fullstack Developer', 'Golden Batam raya', 'Indonesia', 'Jul 2024 - Present', 1);
 
 INSERT INTO experience_responsibilities (experience_id, description, display_order) VALUES
-    (1, 'Write complex Sap B1 Hana report so our department can use the report to increase their work efficient', 1),
-    (1, 'Design a SAP Crystal report rpt that ', 2),
-    (1, 'Achieved a 99.9% uptime for critical manufacturing processes by migrating legacy workflows to Google Cloud (GCP), leveraging Cloud Run Functions and Application Integration', 3),
-    (1, 'Revamped the SDLC by implementing a Feature Branching strategy and CI/CD pipelines, reducing code conflicts by 80% and enhancing deployment reliability across SEA and China', 4),
-    (1, 'Refactored Reporting T-SQL queries, achieving a 99% execution speed improvement (hours to seconds) by analyzing execution plan and applying proper indexing', 5),
-    (1, 'Developed automated data integration solutions synchronizing SharePoint and Caspio platforms data to SQL Server using .NET 8 and RESTful APIs, enabling audit trail capabilities', 6);
+    (1, 'Developed complex SAP B1 HANA Query reports to automate data extraction and analysis, significantly improving departmental workflow efficiency through optimized data visibility.', 1),
+    (1, 'Designed custom SAP Crystal Reports (.rpt) tailored to cross-departmental requirements, transforming raw business data into actionable insights for internal stakeholders.', 2),
+    (1, 'Developed a high-performance POS system using React.js and ASP.NET, ensuring efficient data handling and a responsive user interface.', 3),
+    (1, 'Developed a custom reporting engine using ASP.NET and Vanilla JavaScript featuring dynamic column selection and filtering. Optimized database overhead by implementing precise field selection, preventing unnecessary resource consumption from high-volume SAP tables.', 4),
+    (1, 'Engineered a high-complexity web application using React.js and ASP.NET to replicate and modernize SAP Business One Marketing Document workflows, providing a more streamlined and responsive internal interface', 5),
+    (1, 'Developed a Batch-based automation solution to streamline SAP B1 data redundancy. The script manages the transfer of backup archives to local servers and executes secure cloud synchronization to Google Drive using Rclone.', 6);
+    (1, 'Engineered a PowerShell-based remote management tool allowing users to securely trigger server shutdowns (Linux/Proxmox) from their workstations. Implemented custom credential validation logic to ensure authorized access before executing administrative commands.', 7);
 
-    
--- ANACLE
-INSERT INTO experiences (position, company, location, duration, display_order)
-VALUES ('Full Stack Developer', 'ANACLE', 'Singapore', 'Dec 2021 - Oct 2022', 2);
 
-INSERT INTO experience_responsibilities (experience_id, description, display_order) VALUES
-    (2, 'Managed and modernized the ANACLE Simplicity system, supporting the Enterprise Asset Management (EAM) module across ASP.NET Web Forms, Web API, and Xamarin Forms', 1),
-    (2, 'Transitioned infrastructure to H-Cloud environment, ensuring seamless data exchange and application functionality across restricted internet and intranet zones', 2),
-    (2, 'Integrated 2FA and Google Maps services within high-security environments by managing whitelist requests and implementing local library referencing for blocked JavaScript assets', 3);
-
--- Business Connectivity
-INSERT INTO experiences (position, company, location, duration, display_order)
-VALUES ('Full Stack Developer', 'Business Connectivity', 'Singapore', 'Dec 2019 - Dec 2021', 3);
-
-INSERT INTO experience_responsibilities (experience_id, description, display_order) VALUES
-    (3, 'Engineered enterprise-scale web applications using ASP.NET Core, C#, and JavaScript, delivering high-performance backend logic and responsive UI components', 1),
-    (3, 'Migrated legacy systems to AWS EC2, optimizing instance configurations to improve scalability and maintain a 99.9% system uptime', 2),
-    (3, 'Developed a geolocation verification module in Flutter using Google Maps API, achieving 99% location accuracy and eliminating fraudulent field check-ins', 3),
-    (3, 'Automated delivery scheduling by integrating Google Workspace APIs with the ERP system, triggering real-time Google Calendar updates upon invoice finalization', 4);
-
--- Celindo Pratama
-INSERT INTO experiences (position, company, location, duration, display_order)
-VALUES ('Software Engineer', 'Celindo Pratama', 'Batam, Indonesia', 'Aug 2014 - Dec 2019', 4);
-
-INSERT INTO experience_responsibilities (experience_id, description, display_order) VALUES
-    (4, 'Modernized application architecture by leading the transition from ASP.NET Web Forms to ASP.NET MVC, improving maintainability and alignment with industry standards', 1),
-    (4, 'Designed and implemented manufacturing systems tailored to client business needs using C# WinForms and ASP.NET Web Forms', 2),
-    (4, 'Engaged directly with customers to translate complex business requirements into functional software specifications and system designs', 3);
 
 -- 5. Insert Projects
 INSERT INTO projects (title, description, url, github_url, image_url, display_order)
 VALUES (
-    'URL Shortener',
-    'Simple URL shortener with Minimal API, PostgreSQL hosted on Azure Web App with automated deployment via GitHub Actions',
-    'https://kelbin-url-shortener-cue0bccgdze6ccfy.southeastasia-01.azurewebsites.net/',
-    'https://github.com/kelbindev/url-shortener',
+    'Research Conference Project',
+    'A Conference Research system that using React.js + Spring boot + Postgresql Technology',
+    'https://front-end-research.herokuapp.com/',
+    'https://github.com/limlyang121/Front-end-Research',
     'https://via.placeholder.com/200x150/1b2838/66c0f4?text=URL+Shortener',
     1
 );
 
 INSERT INTO project_technologies (project_id, technology, display_order) VALUES
-    (1, 'C#', 1),
-    (1, 'Minimal API', 2),
+    (1, 'React.js', 1),
+    (1, 'Spring Boot', 2),
     (1, 'PostgreSQL', 3),
-    (1, 'Azure', 4),
-    (1, 'Azure Key Vault', 5),
-    (1, 'Azure Web Apps', 6),
-    (1, 'Github Actions', 7);
+    (1, 'Spring Security', 4),
+    (1, 'Google Drive API', 5),
+    (1, 'JWT Auth token', 6);
 
 INSERT INTO projects (title, description, url, github_url, image_url, display_order)
 VALUES (
-    'Blazor Games',
-    'Blazor web app containing mini-games with automated deployment through GitHub Actions',
-    'https://kelbindev.github.io/',
-    'https://github.com/kelbindev/blazor-games',
-    'https://via.placeholder.com/200x150/1b2838/66c0f4?text=Blazor+Games',
+    'Portfolio',
+    'My Portfolio',
+    'https://edy-kelvianto.com/', 
+    'https://github.com/limlyang121/My-Portfolio', 
+    'https://via.placeholder.com/200x150/1b2838/66c0f4?text=Steam+Portfolio',
     2
 );
 
+-- Insert Technologies for Project ID 2 (Assuming the next ID is 2)
 INSERT INTO project_technologies (project_id, technology, display_order) VALUES
-    (2, 'C#', 1),
-    (2, 'Blazor', 2),
-    (2, 'Azure Static Web App', 3),
-    (2, 'Github Actions', 4);
+    (2, 'Blazor (C#)', 1),
+    (2, '.NET 8', 2),
+    (2, 'PostgreSQL', 3),
+    (2, 'Docker', 4),
+    (2, 'Nginx', 5),
+    (2, 'Linux VPS', 6);
 
 -- 6. Insert Education
 INSERT INTO education (degree, school, location)
-VALUES ('Bachelor of Information Technology', 'University of Putera Batam', 'Batam, Indonesia');
+VALUES ('Bachelor of Computer Science (Digital system Security )', 'University of Wollongong', 'Singapore');
 
 -- 7. Insert Contact Links
 INSERT INTO contact_links (icon, text, url, display_order) VALUES
-    ('bi-linkedin', 'LinkedIn', 'https://linkedin.com/in/kelbin-kelbin', 1),
-    ('bi-github', 'GitHub', 'https://github.com/kelbindev', 2),
-    ('bi-envelope-fill', 'kelbinlin95@gmail.com', 'mailto:kelbinlin95@gmail.com', 3),
-    ('bi-telephone-fill', '+65 8548 3315', 'tel:+6585483315', 4),
+    ('bi-linkedin', 'LinkedIn', 'https://www.linkedin.com/in/edy-kelvianto-440156202/', 1),
+    ('bi-github', 'GitHub', 'https://github.com/limlyang121', 2),
+    ('bi-envelope-fill', 'limlyang121@outlook.com', 'mailto:limlyang121@outlook.com', 3),
+    ('bi-telephone-fill', '+62 853 5623 1234', 'tel:+6285356231234', 4),
     ('bi-steam', 'ribbit', 'https://steamcommunity.com/id/kbkbkb95/', 5);
 
 -- 8. Insert Location
