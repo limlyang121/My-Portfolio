@@ -21,7 +21,7 @@ VALUES
 -- Backend
 INSERT INTO skill_categories (title, display_order) VALUES ('Backend', 1);
 INSERT INTO skills (category_id, name, display_order) VALUES
-    (1, '.NET 8', 1),
+    (1, '.NET Classic', 1),
     (1, '.NET Core', 2),
     (1, 'C#', 3),
     (1, 'JavaScript', 4),
@@ -46,8 +46,7 @@ INSERT INTO skills (category_id, name, display_order) VALUES
     (3, 'MS SQL Server', 1),
     (3, 'PostgreSQL', 2),
     (3, 'SAP B1 Hana', 3),
-    (3, 'Performance Tuning', 4),
-    (3, 'Indexing', 5);
+    (3, 'Indexing', 4);
 
 INSERT INTO skill_categories (title, display_order) VALUES ('Cloud', 4);
 INSERT INTO skills (category_id, name, display_order) VALUES
@@ -130,7 +129,7 @@ INSERT INTO contact_links (icon, text, url, display_order) VALUES
     ('bi-github', 'GitHub', 'https://github.com/limlyang121', 2),
     ('bi-envelope-fill', 'limlyang121@outlook.com', 'mailto:limlyang121@outlook.com', 3),
     ('bi-telephone-fill', '+62 853 5623 1234', 'tel:+6285356231234', 4),
-    ('bi-steam', 'ribbit', 'https://steamcommunity.com/id/kbkbkb95/', 5);
+    ('bi-steam', 'Yang', 'https://https://steamcommunity.com/profiles/76561198068953669/', 5);
 
 -- 8. Insert Location
 INSERT INTO location_info (location)
