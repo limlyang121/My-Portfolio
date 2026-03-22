@@ -758,13 +758,14 @@ body::before {
     margin-bottom: 0;
 }
 
-.experience-description li::before {
-    content: '?';
-    position: absolute;
-    left: 0;
-    color: var(--steam-highlight);
-    font-size: 16px;
-}
+    .experience-description li::before {
+        content: '\F526';
+        font-family: "bootstrap-icons";
+        position: absolute;
+        left: 0;
+        color: var(--steam-highlight);
+        font-size: 16px;
+    }
 
 /* Level/Progress */
 .level-section {
