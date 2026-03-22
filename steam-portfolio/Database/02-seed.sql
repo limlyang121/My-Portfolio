@@ -24,12 +24,10 @@ INSERT INTO skills (category_id, name, display_order) VALUES
     (1, '.NET Classic', 1),
     (1, '.NET Core', 2),
     (1, 'C#', 3),
-    (1, 'JavaScript', 4),
-    (1, 'SQL', 5),
-    (1, 'B1 Hana', 6),
-    (1, 'EF Core', 7),
-    (1, 'REST API', 8),
-    (1, 'Spring Boot', 9);
+    (1, 'EF Core', 4),
+    (1, 'REST API', 5),
+    (1, 'Spring Boot', 6),
+    (1, 'Blazor', 6);
 
 
 -- Frontend
