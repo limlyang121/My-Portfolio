@@ -16,3 +16,26 @@
         right: 0.75rem;
         top: 0.5rem;
     }
+
+.experience-description {
+    list-style-type: none !important;
+    padding-left: 20px !important;
+    margin-top: 10px;
+}
+
+    .experience-description li {
+        position: relative;
+        margin-bottom: 10px;
+        color: #acb2b8;
+        line-height: 1.6;
+        display: block !important;
+    }
+
+
+        .experience-description li::before {
+            content: "•";
+            position: absolute;
+            left: -20px;
+            color: #67c1f5;
+            font-weight: bold;
+        }
