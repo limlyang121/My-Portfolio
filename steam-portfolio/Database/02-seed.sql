@@ -77,7 +77,7 @@ INSERT INTO experience_responsibilities (experience_id, description, display_ord
     (1, 'Developed a high-performance POS system using React.js and ASP.NET, ensuring efficient data handling and a responsive user interface.', 3),
     (1, 'Developed a custom reporting engine using ASP.NET and Vanilla JavaScript featuring dynamic column selection and filtering. Optimized database overhead by implementing precise field selection, preventing unnecessary resource consumption from high-volume SAP tables.', 4),
     (1, 'Engineered a high-complexity web application using React.js and ASP.NET to replicate and modernize SAP Business One Marketing Document workflows, providing a more streamlined and responsive internal interface', 5),
-    (1, 'Developed a Batch-based automation solution to streamline SAP B1 data redundancy. The script manages the transfer of backup archives to local servers and executes secure cloud synchronization to Google Drive using Rclone.', 6);
+    (1, 'Developed a Batch-based automation solution to streamline SAP B1 data redundancy. The script manages the transfer of backup archives to local servers and executes secure cloud synchronization to Google Drive using Rclone.', 6),
     (1, 'Engineered a PowerShell-based remote management tool allowing users to securely trigger server shutdowns (Linux/Proxmox) from their workstations. Implemented custom credential validation logic to ensure authorized access before executing administrative commands.', 7);
 
 
