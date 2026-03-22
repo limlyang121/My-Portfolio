@@ -759,12 +759,12 @@ body::before {
 }
 
     .experience-description li::before {
-        content: '\F526';
-        font-family: "bootstrap-icons";
+        content: '•';
         position: absolute;
         left: 0;
         color: var(--steam-highlight);
-        font-size: 16px;
+        font-size: 14px;
+        top: 0;
     }
 
 /* Level/Progress */
