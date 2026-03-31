@@ -5,7 +5,7 @@ INSERT INTO profile (name, title, summary, level, avatar_url, avatar_frame_url, 
 VALUES (
     'Edy Kelvianto',
     'Fullstack Developer',
-    'Dynamic Fullstack Developer with expertise in building scalable web applications using ASP.NET and React.js. Proven track record in optimizing database performance through complex SQL/HANA query development.',
+    'Fullstack developer with hands-on experience building internal web applications using ASP.NET and React.js. Experienced in SAP Business One integration, custom report development, and writing complex SQL/HANA queries for data extraction and performance optimization.',
     23,
     'images/profile.jpg',
     'images/profile-frame.png',
