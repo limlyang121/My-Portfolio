@@ -127,7 +127,7 @@ INSERT INTO contact_links (icon, text, url, display_order) VALUES
     ('bi-github', 'GitHub', 'https://github.com/limlyang121', 2),
     ('bi-envelope-fill', 'limlyang121@outlook.com', 'mailto:limlyang121@outlook.com', 3),
     ('bi-telephone-fill', '+62 853 5623 1234', 'tel:+6285356231234', 4),
-    ('bi-steam', 'Yang', 'https://https://steamcommunity.com/profiles/76561198068953669/', 5);
+    ('bi-steam', 'Yang', 'https://steamcommunity.com/profiles/76561198068953669/', 5);
 
 -- 8. Insert Location
 INSERT INTO location_info (location)
