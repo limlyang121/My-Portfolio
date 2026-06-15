@@ -38,9 +38,6 @@ services:
 
   steam-portfolio:
     image: ghcr.io/limlyang121/my-portfolio:main
-    build:
-      context: .
-      dockerfile: Dockerfile
     expose:
       - "8080"
     environment:
