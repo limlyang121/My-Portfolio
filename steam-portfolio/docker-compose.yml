@@ -28,7 +28,7 @@ services:
     #   - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./Database:/docker-entrypoint-initdb.d:ro # Added :ro for Read-Only safety
+      - db_init:/docker-entrypoint-initdb.d:ro  # ← from image, not VPS disk
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
@@ -52,4 +52,4 @@ services:
 
 volumes:
   postgres_data:
-
+  db_init: shared between init container and postgres

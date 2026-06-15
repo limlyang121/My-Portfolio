@@ -51,8 +51,6 @@ jobs:
           script: |
             # Change this path to where your docker-compose.yml sits on your VPS
             cd /home/limlyang/portfolio/My-Portfolio
-            git pull origin main
-
             cd steam-portfolio
             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
             
