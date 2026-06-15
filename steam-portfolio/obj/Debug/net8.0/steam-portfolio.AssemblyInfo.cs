@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("steam-portfolio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83228409fb8c5f529189bc32c6392f31dcbeb626")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeed548eaf125f4a502888f0d61e710acb0ce6ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("steam-portfolio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("steam-portfolio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
