@@ -112,10 +112,11 @@ VALUES (
 INSERT INTO project_technologies (project_id, technology, display_order) VALUES
     (2, 'Blazor (C#)', 1),
     (2, '.NET 8', 2),
-    (2, 'PostgreSQL', 3),
-    (2, 'Docker', 4),
-    (2, 'Nginx', 5),
-    (2, 'Linux VPS', 6);
+    (2, '.Github Action', 3),
+    (2, 'PostgreSQL', 4),
+    (2, 'Docker', 5),
+    (2, 'Nginx', 6),
+    (2, 'Linux VPS', 7);
 
 -- 6. Insert Education
 INSERT INTO education (degree, school, location)
