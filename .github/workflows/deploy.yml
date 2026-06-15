@@ -55,6 +55,6 @@ jobs:
             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
             
             docker compose down -v
-            docker compose pull steam-portfolio
+            docker compose pull steam-portfolio postgres-init
             docker compose up -d
             docker image prune -f
