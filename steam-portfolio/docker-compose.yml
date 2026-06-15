@@ -1,7 +1,6 @@
 services:
 
   postgres-init:
-    user: root
     image: ghcr.io/limlyang121/my-portfolio:main
     volumes:
       - db_init:/docker-entrypoint-initdb.d
