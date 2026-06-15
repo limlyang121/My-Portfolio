@@ -1,6 +1,7 @@
 services:
 
   postgres-init:
+    user: root
     image: ghcr.io/limlyang121/my-portfolio:main
     volumes:
       - db_init:/docker-entrypoint-initdb.d
@@ -36,7 +37,7 @@ services:
       postgres-init:
         condition: service_completed_successfully
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-postgres}"]
       interval: 10s
       timeout: 5s
       retries: 5
