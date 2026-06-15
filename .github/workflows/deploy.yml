@@ -57,11 +57,13 @@ jobs:
             DB_CONNECTION=${{ secrets.DB_CONNECTION }}
             EOF
             chmod 600 /home/limlyang/portfolio/My-Portfolio/steam-portfolio/.env
-            cd /home/limlyang/portfolio/My-Portfolio/steam-portfolio
+            cd /home/limlyang/portfolio/My-Portfolio
 
+            # ✅ Pull latest files (docker-compose.yml, nginx.conf, seed files etc)
+            git pull origin main
+
+            cd steam-portfolio
             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-
-            # ✅ Wipe and reseed on every deploy
             docker compose down -v
             docker compose pull
             docker compose up -d --remove-orphans
