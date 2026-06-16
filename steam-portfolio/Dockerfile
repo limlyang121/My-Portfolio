@@ -20,6 +20,7 @@ RUN adduser --disabled-password --gecos "" appuser && \
 USER appuser
 
 COPY --from=publish /app/publish .
+COPY --chown=appuser:appuser Database/ ./Database/
 ENV ASPNETCORE_URLS=http://+:8080
 ENV ASPNETCORE_ENVIRONMENT=Production
 ENTRYPOINT ["dotnet", "steam-portfolio.dll"]
