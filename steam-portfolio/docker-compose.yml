@@ -6,6 +6,7 @@ services:
       - db_init:/docker-entrypoint-initdb.d
     entrypoint: ["/bin/sh", "-c"]
     command: ["cp -r /app/Database/. /docker-entrypoint-initdb.d/"]
+    user: root
     restart: "no"
   nginx:
       image: nginx:alpine
