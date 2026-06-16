@@ -4,7 +4,8 @@ services:
     image: ghcr.io/limlyang121/my-portfolio:main
     volumes:
       - db_init:/docker-entrypoint-initdb.d
-    command: cp -r /app/Database/. /docker-entrypoint-initdb.d/
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["cp -r /app/Database/. /docker-entrypoint-initdb.d/"]
     restart: "no"
   nginx:
       image: nginx:alpine
