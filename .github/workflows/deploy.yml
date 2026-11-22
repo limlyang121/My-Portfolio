@@ -50,14 +50,14 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             set -euo pipefail
-            cat > /home/limlyang/portfolio/My-Portfolio/steam-portfolio/.env << EOF
+            cat > /root/project/portfolio/My-Portfolio/steam-portfolio/.env << EOF
             POSTGRES_DB=${{ secrets.POSTGRES_DB }}
             POSTGRES_USER=${{ secrets.POSTGRES_USER }}
             POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
             DB_CONNECTION=${{ secrets.DB_CONNECTION }}
             EOF
-            chmod 600 /home/limlyang/portfolio/My-Portfolio/steam-portfolio/.env
-            cd /home/limlyang/portfolio/My-Portfolio
+            chmod 600 /root/project/portfolio/My-Portfolio/steam-portfolio/.env
+            cd /root/project/portfolio/My-Portfolio
 
             # ✅ Pull latest files (docker-compose.yml, nginx.conf, seed files etc)
             git pull origin main
